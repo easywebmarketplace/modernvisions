@@ -1,0 +1,59 @@
+:root {
+    --txt-clr: #efefef;
+    --txt-desaturated-clr: #cacaca;
+
+    --primary-clr: hsl(282, 26%, 7%);
+    --secondary-clr: hsl(282, 26%, 13%);
+    --secondary-clr-2: hsl(282, 26%, 27%);
+    --accent-clr: #ac2dfb;
+    --accent-clr-2: #ff35f5;
+    --accent-highlight-clr: hsl(303, 100%, 80%);
+    --red-highlight-clr: hsl(352, 100%, 69%);
+}
+
+.h-block {
+    padding-left: clamp(.5rem, 4vw,10rem);
+    padding-right: clamp(.5rem, 4vw, 10rem);
+}
+
+.v-block {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.l-block {
+    padding-left: clamp(1rem, 8vw,10rem);
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.paragraph {
+    font-size: 3rem;
+    color: #ebebeb;
+}
+
+button, .button {
+    width: fit-content;
+    padding: .75rem 2rem;
+    border-radius: 100vw;
+    color: var(--txt-clr);
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+    background: linear-gradient(-30deg, var(--accent-clr), var(--accent-clr-2));
+    transition: all 250ms ease-in-out;
+    z-index: 1;
+}
+
+@media (max-width: 50em) {
+    button, .button {
+        padding: .33rem 1rem;
+    }
+}
+
+button:hover, .button:hover {
+    filter: brightness(2.5);
+}
